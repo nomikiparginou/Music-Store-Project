@@ -10,3 +10,4 @@ Files included:
 - Views Folder for each operation
 - Controllers Folder for each operation 
 - User Manual in greek 
+- Database file (Chinook.bak)
