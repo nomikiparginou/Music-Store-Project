@@ -1,0 +1,55 @@
+﻿@model IEnumerable<WebApplication3.Models.ReportVI_Result>
+
+<h2>Report VI</h2>
+
+<table class="table">
+    <tr>
+        <th>
+            <h5><b>Track Name </b></h5>
+        </th>
+        <th>
+            <h5><b>Artist Name </b></h5>
+        </th>
+        <th>
+            <h5><b>Year of Invoice </b></h5>
+        </th>
+        <th>
+            <h5><b>1st Quarter Sales </b></h5>
+        </th>
+        <th>
+            <h5><b>2nd Quarter Sales </b></h5>
+        </th>
+        <th>
+            <h5><b>3rd Quarter Sales </b></h5>
+        </th>
+        <th>
+            <h5><b>4th Quarter Sales </b></h5>
+        </th>>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TrackName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ArtistName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Year)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sales1st)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sales2nd)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sales3rd)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sales4th)
+        </td>
+    </tr>
+}
+</table>

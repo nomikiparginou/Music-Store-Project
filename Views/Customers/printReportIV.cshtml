@@ -1,0 +1,53 @@
+﻿
+@model IEnumerable<WebApplication3.Models.ReportIV_Result>
+
+<h2>ReportIV</h2>
+
+
+<table class="table">
+    <tr>
+        <th>
+            <h5><b>First Name</b></h5>
+        </th>
+        <th>
+            <h5><b>Last Name </b></h5>
+        </th>
+        <th>
+            <h5>Phone</h5>
+        </th>
+        <th>
+            <h5>Fax</h5>
+        </th>
+        <th>
+            <h5>Email</h5>
+        </th>
+        <th>
+            <h5>Income</h5>
+        </th>>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.FirstName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.LastName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Phone)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Fax)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Email)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Income)
+    </td>>
+</tr>
+    }
+
+</table>
